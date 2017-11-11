@@ -10,7 +10,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(main.market.com.automarket.R.layout.activity_main);
 
-        //ddd
+        //sss
     }
 
 }
