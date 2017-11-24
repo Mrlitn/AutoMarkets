@@ -8,9 +8,10 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(main.market.com.automarket.R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
-        //sss
+        //win10 11
+        //111
     }
 
 }
