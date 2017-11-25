@@ -10,8 +10,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //win10 11
-        //111
     }
 
 }
