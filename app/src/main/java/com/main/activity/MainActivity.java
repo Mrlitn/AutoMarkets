@@ -1,4 +1,4 @@
-package com.main.automarket;
+package com.main.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
