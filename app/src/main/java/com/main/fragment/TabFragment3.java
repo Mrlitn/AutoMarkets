@@ -7,10 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.main.activity.R;
-import com.main.base.BaseFragment;
+import com.main.utils.BaseFragment;
 
 /**
- * 我的
+ * 发现
  */
 
 public class TabFragment3 extends BaseFragment {
@@ -23,10 +23,4 @@ public class TabFragment3 extends BaseFragment {
         return view;
     }
 
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-
-    }
 }

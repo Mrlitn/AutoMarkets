@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.main.activity.R;
-import com.main.base.BaseFragment;
+import com.main.utils.BaseFragment;
 
 /**
  * 发现
@@ -24,7 +24,7 @@ public class TabFragment2 extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment2, null);
 
-        initView();
+//        initView();
         return view;
     }
 

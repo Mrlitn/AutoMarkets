@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.main.activity.R;
-import com.main.base.BaseFragment;
+import com.main.utils.BaseFragment;
 
 /**
  * 首页
