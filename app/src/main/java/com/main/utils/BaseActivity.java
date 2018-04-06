@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 /**
  *
+ * Activity的基类
  */
 
 public class BaseActivity extends FragmentActivity implements View.OnClickListener {
@@ -18,7 +19,6 @@ public class BaseActivity extends FragmentActivity implements View.OnClickListen
 
     }
 
-
     @Override
     public void onClick(View view) {
 
@@ -27,4 +27,5 @@ public class BaseActivity extends FragmentActivity implements View.OnClickListen
     public void showToast(String txt) {
         Toast.makeText(getApplicationContext(), txt, Toast.LENGTH_SHORT).show();
     }
+
 }
