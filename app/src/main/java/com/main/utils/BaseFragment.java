@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * 所有Fragment的基类
+ * Fragment的基类
  */
 
 public class BaseFragment extends Fragment implements View.OnClickListener{
