@@ -7,8 +7,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.main.activity.CitysName;
 import com.main.activity.R;
 import com.main.activity.SearchCars;
@@ -22,6 +25,8 @@ public class TabFragment1 extends BaseFragment {
     private View view;
     private TextView center_name, select_city, search_cars;
 
+    private PullToRefreshListView pull_listview;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -29,7 +34,20 @@ public class TabFragment1 extends BaseFragment {
 
         Log.d("TabFragment1", "TabFragment1");
         initView();
+        initRefreshListView();
+
         return view;
+    }
+
+    //
+    private void initRefreshListView() {
+        pull_listview = view.findViewById(R.id.pull_listview);
+        pull_listview.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ListView>() {
+            @Override
+            public void onRefresh(PullToRefreshBase<ListView> refreshView) {
+                Log.d("PullToRefreshListView", "PullToRefreshListView");
+            }
+        });
     }
 
     //
@@ -37,9 +55,7 @@ public class TabFragment1 extends BaseFragment {
         center_name = view.findViewById(R.id.center_name);
         select_city = view.findViewById(R.id.select_city);
         search_cars = view.findViewById(R.id.search_cars);
-
         center_name.setText("车易行");
-
         select_city.setOnClickListener(this);
         search_cars.setOnClickListener(this);
     }
