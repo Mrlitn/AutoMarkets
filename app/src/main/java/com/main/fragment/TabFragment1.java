@@ -32,6 +32,7 @@ public class TabFragment1 extends BaseFragment {
         return view;
     }
 
+    //Test
     private void initView() {
         center_name = view.findViewById(R.id.center_name);
         select_city = view.findViewById(R.id.select_city);
