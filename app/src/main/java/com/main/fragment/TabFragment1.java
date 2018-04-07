@@ -46,6 +46,7 @@ public class TabFragment1 extends BaseFragment {
             @Override
             public void onRefresh(PullToRefreshBase<ListView> refreshView) {
                 Log.d("PullToRefreshListView", "PullToRefreshListView");
+
             }
         });
     }
