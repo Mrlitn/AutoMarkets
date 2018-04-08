@@ -23,9 +23,9 @@
 
         </activity>
 
-        <activity android:name=".SearchCars">
+        <activity android:name=".SearchCars"></activity>
 
-        </activity>
+        <activity android:name=".AboutUs"></activity>
 
     </application>
 

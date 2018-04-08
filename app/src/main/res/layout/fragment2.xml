@@ -3,6 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/fragmenttitles" />
+    <include
+        android:id="@+id/f2_title"
+        layout="@layout/fragmenttitles" />
+
+    <TextView
+        android:text="购车工具"
+        android:drawableLeft="@drawable/default_ptr_flip"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/f2_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
 
 </RelativeLayout>
