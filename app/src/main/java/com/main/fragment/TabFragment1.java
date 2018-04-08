@@ -26,13 +26,13 @@ public class TabFragment1 extends BaseFragment {
     private TextView center_name, select_city, search_cars;
 
     private PullToRefreshListView pull_listview;
+    private ListView listView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment1, null);
 
-        Log.d("TabFragment1", "TabFragment1");
         initView();
         initRefreshListView();
 
@@ -42,13 +42,27 @@ public class TabFragment1 extends BaseFragment {
     //
     private void initRefreshListView() {
         pull_listview = view.findViewById(R.id.pull_listview);
+
+        //下拉刷新
         pull_listview.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ListView>() {
             @Override
             public void onRefresh(PullToRefreshBase<ListView> refreshView) {
-                Log.d("PullToRefreshListView", "PullToRefreshListView");
 
             }
         });
+
+        //最后
+        pull_listview.setOnLastItemVisibleListener(new PullToRefreshBase.OnLastItemVisibleListener() {
+            @Override
+            public void onLastItemVisible() {
+
+            }
+        });
+
+        listView = pull_listview.getRefreshableView();
+        listView.setDividerHeight(0);
+
+
     }
 
     //

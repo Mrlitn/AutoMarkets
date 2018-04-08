@@ -3,10 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/fragmenttitles" />
+    <include
+        android:id="@+id/f_title"
+        layout="@layout/fragmenttitles" />
 
     <com.handmark.pulltorefresh.library.PullToRefreshListView
         android:id="@+id/pull_listview"
+        android:layout_below="@id/f_title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
