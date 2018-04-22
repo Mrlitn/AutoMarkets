@@ -52,7 +52,7 @@ public class TabFragment1 extends BaseFragment {
         pull_listview.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ListView>() {
             @Override
             public void onRefresh(PullToRefreshBase<ListView> refreshView) {
-
+                //test
             }
         });
 
