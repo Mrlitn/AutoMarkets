@@ -119,16 +119,16 @@ public class TabFragment2Adapter extends BaseAdapter {
         return convertView;
     }
 
-    static class ViewHolderOne {
+     class ViewHolderOne {
         TextView ad_item;
     }
 
-    static class ViewHolderTwo {
+     class ViewHolderTwo {
         TextView type2_item, type2_item2;
 
     }
 
-    static class ViewHolderThree {
+     class ViewHolderThree {
 
     }
 

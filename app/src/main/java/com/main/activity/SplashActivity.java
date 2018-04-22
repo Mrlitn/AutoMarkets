@@ -15,7 +15,6 @@ public class SplashActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
-        //win10
 
         new Handler().postDelayed(new Runnable() {
             @Override
