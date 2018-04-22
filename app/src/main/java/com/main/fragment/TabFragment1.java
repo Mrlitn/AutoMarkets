@@ -3,7 +3,6 @@ package com.main.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,10 @@ import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.main.activity.CitysName;
 import com.main.activity.R;
 import com.main.activity.SearchCars;
+import com.main.adapter.TabFragment1Adapter;
 import com.main.utils.BaseFragment;
+
+import java.util.ArrayList;
 
 /**
  * 首页
@@ -27,6 +29,8 @@ public class TabFragment1 extends BaseFragment {
 
     private PullToRefreshListView pull_listview;
     private ListView listView;
+    private TabFragment1Adapter adapter;
+    private ArrayList<Integer> arrayList = new ArrayList<>();
 
     @Nullable
     @Override
@@ -42,6 +46,7 @@ public class TabFragment1 extends BaseFragment {
     //
     private void initRefreshListView() {
         pull_listview = view.findViewById(R.id.pull_listview);
+        pull_listview.setMode(PullToRefreshBase.Mode.PULL_FROM_START);
 
         //下拉刷新
         pull_listview.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ListView>() {
@@ -51,17 +56,15 @@ public class TabFragment1 extends BaseFragment {
             }
         });
 
-        //最后
-        pull_listview.setOnLastItemVisibleListener(new PullToRefreshBase.OnLastItemVisibleListener() {
-            @Override
-            public void onLastItemVisible() {
-
-            }
-        });
-
         listView = pull_listview.getRefreshableView();
         listView.setDividerHeight(0);
 
+        for (int i = 0; i < 6; i++) {
+            arrayList.add(i);
+        }
+
+        adapter = new TabFragment1Adapter(getActivity(), arrayList);
+        listView.setAdapter(adapter);
 
     }
 

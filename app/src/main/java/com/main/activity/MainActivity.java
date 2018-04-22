@@ -8,12 +8,13 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.main.utils.BaseActivity;
 import com.main.fragment.TabFragment1;
 import com.main.fragment.TabFragment2;
 import com.main.fragment.TabFragment3;
+import com.main.views.SlideBarIndex;
 
 /**
  * 主页面
@@ -21,6 +22,9 @@ import com.main.fragment.TabFragment3;
 
 public class MainActivity extends BaseActivity {
     private Button tab1, tab2, tab3;
+
+    private SlideBarIndex char_num;
+    private TextView char_num_show;
 
     private TabFragment1 tabFragment1;
     private TabFragment2 tabFragment2;
@@ -67,6 +71,21 @@ public class MainActivity extends BaseActivity {
         tab2.setOnClickListener(this);
         tab3.setOnClickListener(this);
 
+        char_num_show = findViewById(R.id.char_num_show);
+        char_num = findViewById(R.id.char_num);
+        char_num.setOnTouchLetterChangeListenner(new SlideBarIndex.OnTouchLetterChangeListenner() {
+            @Override
+            public void onTouchLetterChange(boolean isTouched, String num) {
+                if (isTouched) {
+                    //这个是显示字母
+                    char_num_show.setVisibility(View.VISIBLE);
+                    char_num_show.setText(num);
+                } else {
+                    char_num_show.setVisibility(View.GONE);
+                }
+            }
+        });
+
     }
 
     @Override
@@ -75,14 +94,17 @@ public class MainActivity extends BaseActivity {
         switch (view.getId()) {
             case R.id.main_tab1:
                 index = 0;
+                char_num.setVisibility(View.VISIBLE);
                 break;
 
             case R.id.main_tab2:
                 index = 1;
+                char_num.setVisibility(View.INVISIBLE);
                 break;
 
             case R.id.main_tab3:
                 index = 2;
+                char_num.setVisibility(View.INVISIBLE);
                 break;
 
         }

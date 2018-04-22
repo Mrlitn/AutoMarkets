@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="com.main.activity.MainActivity">
+        <activity android:name="com.main.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,12 +19,18 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".MainActivity"></activity>
+
         <activity android:name=".CitysName">
 
         </activity>
 
         <activity android:name=".SearchCars"></activity>
 
+        <activity android:name=".MyInfo"></activity>
+        <activity android:name=".CarHistory"></activity>
+        <activity android:name=".UserFeedback"></activity>
+        <activity android:name=".JoinUs"></activity>
         <activity android:name=".AboutUs"></activity>
 
     </application>

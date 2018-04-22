@@ -70,6 +70,15 @@
             android:text="清除缓存" />
 
         <TextView
+            android:id="@+id/joinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/default_ptr_flip"
+            android:gravity="center_vertical"
+            android:text="经销商入驻" />
+
+        <TextView
             android:id="@+id/aboutus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -36,4 +36,23 @@
             android:text="我的" />
     </LinearLayout>
 
+    <com.main.views.SlideBarIndex
+        android:id="@+id/char_num"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/char_num_show"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="#ff000f"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:visibility="gone" />
+
 </RelativeLayout>
