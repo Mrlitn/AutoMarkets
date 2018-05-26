@@ -16,6 +16,8 @@ import com.main.fragment.TabFragment2;
 import com.main.fragment.TabFragment3;
 import com.main.views.SlideBarIndex;
 
+import java.util.ArrayList;
+
 /**
  * 主页面
  */
@@ -148,7 +150,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
+        mHandler.removeCallbacksAndMessages(null);
     }
 
 }

@@ -19,19 +19,20 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name="com.main.activity.MainActivity"></activity>
 
-        <activity android:name=".CitysName">
+        <activity android:name="com.main.activity.CitysName">
 
         </activity>
 
-        <activity android:name=".SearchCars"></activity>
+        <activity android:name="com.main.activity.SearchCars"></activity>
 
-        <activity android:name=".MyInfo"></activity>
-        <activity android:name=".CarHistory"></activity>
-        <activity android:name=".UserFeedback"></activity>
-        <activity android:name=".JoinUs"></activity>
-        <activity android:name=".AboutUs"></activity>
+        <activity android:name="com.main.activity.MyInfo"></activity>
+        <activity android:name="com.main.activity.CarHistory"></activity>
+        <activity android:name="com.main.activity.UserFeedback"></activity>
+        <activity android:name="com.main.activity.JoinUs"></activity>
+        <activity android:name="com.main.activity.AboutUs"></activity>
+        <activity android:name="com.main.webview.AutoWebView"></activity>
 
     </application>
 

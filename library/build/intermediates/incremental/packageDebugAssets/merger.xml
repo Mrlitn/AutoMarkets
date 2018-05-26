@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\AS\AutoMarkets\library\src\main\assets"/><source path="D:\AS\AutoMarkets\library\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\AS\AutoMarkets\library\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/WorkSpace/AutoMarket_Android/AutoMarkets/library/src/main/assets"/><source path="/WorkSpace/AutoMarket_Android/AutoMarkets/library/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/WorkSpace/AutoMarket_Android/AutoMarkets/library/src/debug/assets"/></dataSet></merger>

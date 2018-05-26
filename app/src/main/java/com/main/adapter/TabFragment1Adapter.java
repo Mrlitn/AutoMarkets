@@ -1,7 +1,6 @@
 package com.main.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,10 +9,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.main.activity.R;
-import com.main.bean.CarsName;
+import com.main.model.CarsName;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -203,7 +201,6 @@ public class TabFragment1Adapter extends BaseAdapter {
 
     static class ViewHolderTwo {
         TextView type2_item, type2_item2;
-
     }
 
     static class ViewHolderThree {
@@ -218,4 +215,5 @@ public class TabFragment1Adapter extends BaseAdapter {
         TextView car_char_num;
         ListView cars_listview;
     }
+
 }

@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
+
     defaultConfig {
         applicationId "main.market.com.automarket"
         minSdkVersion 15
@@ -10,12 +11,19 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
+    
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    //这里填写渠道名称，格式如下
+    productFlavors {
+//        xiaomi {}
+//        lianxiang {}
+//        huawei {}
     }
 
     //---------------------------------------
@@ -28,6 +36,7 @@ android {
 }
 
 dependencies {
+    
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
@@ -35,5 +44,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation project(':library')
-    implementation 'name.valery1707.smsc:smsc-http-ok-http:0.1.4'
+//    implementation 'name.valery1707.smsc:smsc-http-ok-http:0.1.4'
+//    implementation 'ru.ok:odnoklassniki-android-sdk:2.1.5'
+//    implementation 'ru.odnoklassniki:ok-ml-pipelines_2.11:0.1-spark2.2'
+//    implementation 'name.valery1707.smsc:smsc-http-ok-http:0.1.4'
+
 }

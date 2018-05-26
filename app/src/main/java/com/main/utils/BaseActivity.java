@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Toast;
 
 /**
- *
  * Activity的基类
  */
 
@@ -16,7 +15,7 @@ public class BaseActivity extends FragmentActivity implements View.OnClickListen
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        
     }
 
     @Override

@@ -9,12 +9,15 @@ import android.support.annotation.Nullable;
 /**
  * 启动页
  */
+
 public class SplashActivity extends Activity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
+
+        initData();
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -24,6 +27,10 @@ public class SplashActivity extends Activity {
                 finish();
             }
         }, 2000);
+
+    }
+
+    private void initData() {
 
     }
 
