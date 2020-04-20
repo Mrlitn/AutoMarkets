@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AutoMarkets.iml" filepath="$PROJECT_DIR$/AutoMarkets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AutoMarkets-app.iml" filepath="$PROJECT_DIR$/app/AutoMarkets-app.iml" group="AutoMarkets/app" />
+      <module fileurl="file://$PROJECT_DIR$/lib/AutoMarkets-lib.iml" filepath="$PROJECT_DIR$/lib/AutoMarkets-lib.iml" group="AutoMarkets/lib" />
+      <module fileurl="file://$PROJECT_DIR$/library/AutoMarkets-library.iml" filepath="$PROJECT_DIR$/library/AutoMarkets-library.iml" group="AutoMarkets/library" />
+      <module fileurl="file://$PROJECT_DIR$/GitHub-AutoMarkets.iml" filepath="$PROJECT_DIR$/GitHub-AutoMarkets.iml" group="AutoMarkets" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
